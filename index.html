@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>desafio-dwf-m4-forms</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script async src="./index.js"></script>
+  </head>
+
+  <body>
+    <form class="opinion-form">
+      <div class="form-row">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" />
+      </div>
+
+      <div class="form-row">
+        <label for="opciones-temas"
+          >De lo aprendido hasta ahora, ¿qué tema te gustó más?</label
+        >
+        <select name="opciones-temas">
+          <option value="Clases">Clases</option>
+          <option value="Funciones">Funciones</option>
+          <option value="Promesas">Promesas</option>
+          <option value="Typescript">Typescript</option>
+        </select>
+      </div>
+
+      <fieldset class="legacy-form-row">
+        <legend>Preferís estudiar</legend>
+        <input type="radio" name="opcion-dia" value="De día" checked />
+        <label for="opcion-dia">De día</label>
+        <input type="radio" name="opcion-noche" value="De noche" />
+        <label for="opcion-noche">De noche</label>
+      </fieldset>
+
+      <div class="form-row">
+        <legend>¿Cuales fueron los temas más complejos hasta ahora?</legend>
+        <input type="checkbox" name="typecript-checkbox" value="Typescript" />
+        <label for="typecript-checkbox">Typescript</label>
+        <input type="checkbox" name="promesas-checkbox" value="Promesas" />
+        <label for="promesas-checkbox">Promesas</label>
+        <input type="checkbox" name="clases-checkbox" value="Clases" />
+        <label for="clases-checkbox">Clases</label>
+        <input type="checkbox" name="funciones-checkbox" value="Funciones" />
+        <label for="funciones-checkbox">Funciones</label>
+      </div>
+
+      <button class="send-button">Enviar</button>
+    </form>
+  </body>
+</html>
