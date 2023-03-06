@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>desafio-dwf-m4-forms</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet" />
     <script async src="./index.js"></script>
   </head>
 
@@ -30,22 +35,39 @@
 
       <fieldset class="legacy-form-row">
         <legend>Preferís estudiar</legend>
-        <input type="radio" name="opcion-dia" value="De día" checked />
+        <input
+          id="opcion-dia"
+          type="radio"
+          name="dia-noche"
+          value="De día"
+          checked />
         <label for="opcion-dia">De día</label>
-        <input type="radio" name="opcion-noche" value="De noche" />
+        <input
+          id="opcion-noche"
+          type="radio"
+          name="dia-noche"
+          value="De noche" />
         <label for="opcion-noche">De noche</label>
       </fieldset>
 
-      <div class="form-row">
+      <div class="form-row checkbox-section">
         <legend>¿Cuales fueron los temas más complejos hasta ahora?</legend>
-        <input type="checkbox" name="typecript-checkbox" value="Typescript" />
-        <label for="typecript-checkbox">Typescript</label>
-        <input type="checkbox" name="promesas-checkbox" value="Promesas" />
-        <label for="promesas-checkbox">Promesas</label>
-        <input type="checkbox" name="clases-checkbox" value="Clases" />
-        <label for="clases-checkbox">Clases</label>
-        <input type="checkbox" name="funciones-checkbox" value="Funciones" />
-        <label for="funciones-checkbox">Funciones</label>
+        <div class="checkbox-container">
+          <input type="checkbox" name="typecript-checkbox" value="Typescript" />
+          <label for="typecript-checkbox">Typescript</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" name="promesas-checkbox" value="Promesas" />
+          <label for="promesas-checkbox">Promesas</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" name="clases-checkbox" value="Clases" />
+          <label for="clases-checkbox">Clases</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" name="funciones-checkbox" value="Funciones" />
+          <label for="funciones-checkbox">Funciones</label>
+        </div>
       </div>
 
       <button class="send-button">Enviar</button>
