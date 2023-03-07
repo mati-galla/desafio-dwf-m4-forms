@@ -10,9 +10,16 @@ body {
   font-size: 18px;
 }
 
+.form-row input[type="text"],
+.form-row select,
+button.send-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
 .opinion-form {
   width: 566px;
-  margin: 75px auto;
+  margin: 15px auto;
   padding: 40px 55px;
   background-color: #ffffff;
   justify-content: left;
@@ -30,8 +37,6 @@ body {
   height: 37px;
   border: 1px solid #000000;
   padding: 0 8px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
 }
 
 .form-row input[type="text"] {
@@ -72,6 +77,4 @@ body {
 button.send-button {
   width: 186px;
   height: 58px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
 }

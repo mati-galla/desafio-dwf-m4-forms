@@ -17,15 +17,15 @@
   <body>
     <form class="opinion-form">
       <div class="form-row">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" />
+        <label for="full-name">Nombre</label>
+        <input type="text" name="full-name" />
       </div>
 
       <div class="form-row">
-        <label for="opciones-temas"
+        <label for="preferred-topic"
           >De lo aprendido hasta ahora, ¿qué tema te gustó más?</label
         >
-        <select name="opciones-temas">
+        <select name="preferred-topic">
           <option value="Clases">Clases</option>
           <option value="Funciones">Funciones</option>
           <option value="Promesas">Promesas</option>
@@ -36,36 +36,56 @@
       <fieldset class="legacy-form-row">
         <legend>Preferís estudiar</legend>
         <input
-          id="opcion-dia"
+          id="day-option"
           type="radio"
-          name="dia-noche"
+          name="preferred-time"
           value="De día"
           checked />
-        <label for="opcion-dia">De día</label>
+        <label for="day-option">De día</label>
+
         <input
-          id="opcion-noche"
+          id="night-option"
           type="radio"
-          name="dia-noche"
+          name="preferred-time"
           value="De noche" />
-        <label for="opcion-noche">De noche</label>
+        <label for="night-option">De noche</label>
       </fieldset>
 
       <div class="form-row checkbox-section">
         <legend>¿Cuales fueron los temas más complejos hasta ahora?</legend>
         <div class="checkbox-container">
-          <input type="checkbox" name="typecript-checkbox" value="Typescript" />
-          <label for="typecript-checkbox">Typescript</label>
+          <input
+            type="checkbox"
+            id="typescript-checkbox"
+            name="complex-topics"
+            value="Typescript" />
+          <label for="complex-topics">Typescript</label>
         </div>
+
         <div class="checkbox-container">
-          <input type="checkbox" name="promesas-checkbox" value="Promesas" />
+          <input
+            type="checkbox"
+            id="promesas-checkbox"
+            name="complex-topics"
+            value="Promesas" />
           <label for="promesas-checkbox">Promesas</label>
         </div>
+
         <div class="checkbox-container">
-          <input type="checkbox" name="clases-checkbox" value="Clases" />
+          <input
+            type="checkbox"
+            id="clases-checkbox"
+            name="complex-topics"
+            value="Clases" />
           <label for="clases-checkbox">Clases</label>
         </div>
+
         <div class="checkbox-container">
-          <input type="checkbox" name="funciones-checkbox" value="Funciones" />
+          <input
+            type="checkbox"
+            id="funciones-checkbox"
+            name="complex-topics"
+            value="Funciones" />
           <label for="funciones-checkbox">Funciones</label>
         </div>
       </div>
